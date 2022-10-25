@@ -18,7 +18,7 @@ class World {
   constructor(container) {
     // Instances of camera, scene, and renderer
     camera = createCamera();
-    scene = createScene("hsl(210, 29%, 35%)");
+    scene = createScene("hsl(0, 100%, 100%)");
     renderer = createRenderer();
 
     // Initializate Loop
@@ -28,7 +28,6 @@ class World {
 
     // Orbit Controls
     const controls = createControls(camera, renderer.domElement);
-
 
     console.log(controls.listenToKeyEvents);
 
